@@ -1,8 +1,463 @@
-<html>
-    <head>
-        <title>SteveEmerald Volunteer Guard</title>
-    </head>
-    <body>
-        <p style="font-size: 50px;">hello mist this is a test</p>
-    </body>
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Steveemerald's People's Serbian Republic</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            height: 140px;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.05),
+                    rgba(255, 255, 255, 0.05)
+                ),
+                url("serbian-flag.png");
+
+            background-size: cover;
+            background-position: center;
+
+            position: relative;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .header-content {
+            width: 92%;
+            max-width: 1400px;
+            height: 100%;
+
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+        }
+
+        /* Government emblem */
+        .emblem {
+            width: 150px;
+            height: 110px;
+
+            object-fit: contain;
+
+            margin-right: 20px;
+        }
+
+        .government-title {
+            color: white;
+
+            text-shadow:
+                2px 2px 3px #333,
+                -1px -1px 2px #333;
+
+            line-height: 1.05;
+        }
+
+        .government-title .serbian {
+            font-size: 34px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .government-title .english {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .government-title .subtitle {
+            color: #111;
+            text-shadow: none;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            margin-top: 12px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .navbar {
+            height: 40px;
+            background: #303030;
+        }
+
+        .nav-inner {
+            width: 92%;
+            max-width: 1400px;
+            height: 100%;
+
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-inner a {
+            color: white;
+            text-decoration: none;
+
+            font-size: 14px;
+
+            padding: 12px 9px;
+
+            transition: background 0.15s;
+        }
+
+        .nav-inner a:hover {
+            background: #555;
+        }
+
+        .search {
+            margin-left: auto;
+
+            display: flex;
+            height: 26px;
+        }
+
+        .search input {
+            width: 170px;
+            border: none;
+
+            padding: 5px 8px;
+
+            font-size: 13px;
+        }
+
+        .search button {
+            border: none;
+            background: #555;
+            color: white;
+
+            padding: 0 12px;
+
+            cursor: pointer;
+        }
+
+        .search button:hover {
+            background: #777;
+        }
+
+
+        /* =========================
+           MAIN CONTENT
+        ========================= */
+
+        .container {
+            width: 88%;
+            max-width: 1500px;
+
+            margin: 36px auto 60px;
+        }
+
+        .page-title {
+            text-align: center;
+
+            font-size: 25px;
+
+            margin: 0 0 20px;
+        }
+
+        .news-grid {
+            display: grid;
+
+            grid-template-columns: 2.2fr 1fr;
+
+            gap: 20px;
+        }
+
+
+        /* =========================
+           MAIN ARTICLE
+        ========================= */
+
+        .main-article img {
+            width: 100%;
+            height: 480px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        .main-article h1 {
+            font-size: 24px;
+            margin: 18px 0 10px;
+        }
+
+        .main-article p {
+            font-size: 15px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+
+        /* =========================
+           SIDE ARTICLE
+        ========================= */
+
+        .side-article h2 {
+            font-size: 18px;
+
+            margin: 5px 0 24px;
+        }
+
+        .side-article img {
+            width: 100%;
+            height: 335px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        .side-article p {
+            font-size: 14px;
+            line-height: 1.5;
+
+            margin-top: 18px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .header {
+                height: auto;
+                min-height: 170px;
+            }
+
+            .header-content {
+                padding: 15px 0;
+            }
+
+            .emblem {
+                width: 100px;
+                height: 90px;
+            }
+
+            .government-title .serbian {
+                font-size: 23px;
+            }
+
+            .government-title .english {
+                font-size: 20px;
+            }
+
+            .government-title .subtitle {
+                font-size: 13px;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-article img {
+                height: auto;
+            }
+
+            .side-article img {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .header-content {
+                width: 95%;
+            }
+
+            .emblem {
+                width: 75px;
+                margin-right: 10px;
+            }
+
+            .government-title .serbian {
+                font-size: 18px;
+            }
+
+            .government-title .english {
+                font-size: 16px;
+            }
+
+            .government-title .subtitle {
+                font-size: 10px;
+            }
+
+            .nav-inner {
+                overflow-x: auto;
+            }
+
+            .search {
+                display: none;
+            }
+
+            .container {
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <!--
+                Put your coat of arms image here.
+                For example: coat-of-arms.png
+            -->
+            <img
+                class="emblem"
+                src="coat-of-arms.png"
+                alt="Coat of Arms"
+            >
+
+            <div class="government-title">
+
+                <div class="serbian">
+                    људска република српска стевеемералд
+                </div>
+
+                <div class="english">
+                    steveemerald's people's serbian republic
+                </div>
+
+                <div class="subtitle">
+                    https://svg-government-rs.github.io/ | English Language Site For Affairs In The SVG
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-inner">
+
+            <a href="#">Home</a>
+            <a href="#">Video</a>
+            <a href="#">Politics</a>
+            <a href="#">Economy</a>
+            <a href="#">Culture</a>
+            <a href="#">Sports</a>
+            <a href="#">History</a>
+            <a href="#">World</a>
+
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         ARTICLES
+    ========================== -->
+
+    <main class="container">
+
+        <h2 class="page-title">
+            Revolutionary Activities of President Steveemerald
+        </h2>
+
+        <div class="news-grid">
+
+
+            <!-- MAIN STORY -->
+
+            <article class="main-article">
+
+                <img
+                    src="main-story.jpg"
+                    alt="President Steveemerald visiting workers"
+                >
+
+                <h1>
+                    President Steveemerald Inspects New Industrial Complex in Novi Beograd
+                </h1>
+
+                <p>
+                    The respected President Steveemerald, leader of the
+                    People's Serbian Republic, conducted a close inspection
+                    of the newly completed industrial complex in Novi Beograd.
+                    During his visit, the President met with engineers,
+                    technicians and factory workers and praised their dedication
+                    to the development of the republic.
+                </p>
+
+            </article>
+
+
+            <!-- SIDE STORY -->
+
+            <article class="side-article">
+
+                <h2>
+                    President Steveemerald Reviews Military Equipment at Batajnica Base
+                </h2>
+
+                <img
+                    src="military-story.jpg"
+                    alt="President Steveemerald reviewing military equipment"
+                >
+
+                <p>
+                    President Steveemerald visited the Batajnica Military Base
+                    to review the latest equipment and meet with members of the
+                    Serbian Armed Forces.
+                </p>
+
+                <p>
+                    He emphasized the importance of strength, unity and
+                    preparedness in defending the People's Serbian Republic,
+                    while reaffirming the republic's commitment to maintaining
+                    a strong and modern national defense.
+                </p>
+
+            </article>
+
+        </div>
+
+    </main>
+
+</body>
 </html>
