@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Economy - Steveemerald's People's Serbian Republic
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: white;
+            color: #111;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            height: 140px;
+
+            background-image: url("serbian-flag.png");
+            background-size: cover;
+            background-position: center;
+
+            border-bottom: 1px solid #999;
+        }
+
+        .header-content {
+            width: 92%;
+            max-width: 1400px;
+            height: 100%;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .emblem {
+            width: 150px;
+            height: 110px;
+
+            object-fit: contain;
+
+            margin-right: 20px;
+        }
+
+        .government-title {
+            line-height: 1.05;
+        }
+
+        .serbian-title {
+            color: white;
+
+            font-size: 34px;
+            font-weight: bold;
+
+            text-shadow:
+                2px 2px 3px #333,
+                -1px -1px 2px #333;
+        }
+
+        .english-title {
+            color: white;
+
+            font-size: 28px;
+            font-weight: bold;
+
+            margin-top: 7px;
+
+            text-shadow:
+                2px 2px 3px #333,
+                -1px -1px 2px #333;
+        }
+
+        .subtitle {
+            color: #111;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            margin-top: 12px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .navbar {
+            height: 40px;
+            background: #303030;
+        }
+
+        .nav-inner {
+            width: 92%;
+            max-width: 1400px;
+            height: 100%;
+
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-inner a {
+            color: white;
+            text-decoration: none;
+
+            font-size: 14px;
+
+            padding: 12px 9px;
+        }
+
+        .nav-inner a:hover {
+            background: #555;
+        }
+
+        .search {
+            margin-left: auto;
+
+            display: flex;
+            height: 26px;
+        }
+
+        .search input {
+            width: 170px;
+
+            border: none;
+
+            padding: 5px 8px;
+        }
+
+        .search button {
+            border: none;
+
+            background: #555;
+            color: white;
+
+            padding: 0 12px;
+
+            cursor: pointer;
+        }
+
+        .search button:hover {
+            background: #777;
+        }
+
+
+        /* =========================
+           ECONOMY PAGE
+        ========================= */
+
+        .economy-container {
+            width: 82%;
+            max-width: 1200px;
+
+            margin: 40px auto 80px;
+        }
+
+        .economy-title {
+            text-align: center;
+
+            font-size: 28px;
+
+            margin-bottom: 40px;
+        }
+
+        .article {
+            margin-bottom: 55px;
+        }
+
+        .article h1 {
+            font-size: 27px;
+
+            border-bottom: 2px solid #333;
+
+            padding-bottom: 10px;
+        }
+
+        .article-content {
+            display: flex;
+
+            gap: 30px;
+
+            align-items: flex-start;
+        }
+
+        .article-photo {
+            width: 380px;
+            height: 270px;
+
+            object-fit: cover;
+
+            border: 1px solid #aaa;
+        }
+
+        .article-text {
+            flex: 1;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+        }
+
+        .article-text p {
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+
+        /* =========================
+           TIMELINE
+        ========================= */
+
+        .timeline {
+            border-left: 4px solid #333;
+
+            padding-left: 25px;
+
+            margin-top: 45px;
+        }
+
+        .timeline h2 {
+            font-size: 23px;
+        }
+
+        .timeline p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .article-content {
+                flex-direction: column;
+            }
+
+            .article-photo {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="header-content">
+
+        <img
+            class="emblem"
+            src="coat-of-arms.png"
+            alt="Coat of Arms"
+        >
+
+        <div class="government-title">
+
+            <div class="serbian-title">
+                људска република српска стевеемералд
+            </div>
+
+            <div class="english-title">
+                steveemerald's people's serbian republic
+            </div>
+
+            <div class="subtitle">
+                https://svg-government-rs.github.io/ |
+                English Language Site For Affairs In The SVG
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav class="navbar">
+
+    <div class="nav-inner">
+
+        <a href="index.html">Home</a>
+
+        <a href="#">Video</a>
+
+        <a href="#">Politics</a>
+
+        <a href="economy.html">Economy</a>
+
+        <a href="#">Culture</a>
+
+        <a href="#">Sports</a>
+
+        <a href="history.html">History</a>
+
+        <a href="#">World</a>
+
+
+        <div class="search">
+
+            <input
+                type="text"
+                placeholder="Search..."
+            >
+
+            <button>
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     ECONOMY
+========================= -->
+
+<main class="economy-container">
+
+    <h1 class="economy-title">
+        Economic History of the People's Serbian Republic
+    </h1>
+
+
+    <!-- =========================
+         PEOPLE'S COMMERCIAL BANK
+    ========================= -->
+
+    <section class="article">
+
+        <h1>
+            People's Commercial Bank
+        </h1>
+
+        <div class="article-content">
+
+            <!--
+                OPTIONAL PHOTO
+
+                Put a photo named:
+                dark-auction-bank.jpg
+
+                into the repository.
+            -->
+
+            <img
+                class="article-photo"
+                src="dark-auction-bank.jpg"
+                alt="People's Commercial Bank"
+            >
+
+
+            <div class="article-text">
+
+                <p>
+                    The <strong>People's Commercial Bank</strong> was an
+                    economic and organizational institution established
+                    in Town Debug in early 2021.
+                </p>
+
+                <p>
+                    Its origins can be traced to Comrade
+                    <strong>Željko Petrovic</strong>'s encounter with
+                    the people operating the People's Oil Rig.
+                </p>
+
+                <p>
+                    The workers and organizers of the People's Oil Rig
+                    followed the Juche ideal and had developed their own
+                    system of organization and faction management.
+                    After meeting them, Comrade Petrovic was convinced
+                    to assist with the management and development of
+                    their faction.
+                </p>
+
+                <p>
+                    From this early cooperation, the People's Commercial
+                    Bank developed into an active organization with
+                    economic, administrative and faction-management
+                    functions.
+                </p>
+
+                <p>
+                    The organization remained active throughout much of
+                    the following years and became associated with the
+                    economic history of Town Debug and the surrounding
+                    factions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PEOPLE'S OIL RIG
+    ========================= -->
+
+    <section class="article">
+
+        <h1>
+            People's Oil Rig
+        </h1>
+
+        <div class="article-content">
+
+            <!--
+                OPTIONAL PHOTO
+
+                Put a photo named:
+                oil-rig.jpg
+
+                into the repository.
+            -->
+
+            <img
+                class="article-photo"
+                src="oil-rig.jpg"
+                alt="People's Oil Rig"
+            >
+
+
+            <div class="article-text">
+
+                <p>
+                    The <strong>People's Oil Rig</strong> played an
+                    important role in the origins of the People's
+                    Commercial Bank.
+                </p>
+
+                <p>
+                    Its members followed the Juche ideal and maintained
+                    a distinct factional organization in Town Debug.
+                </p>
+
+                <p>
+                    The meeting between the People's Oil Rig community
+                    and Comrade Željko Petrovic in early 2021 became
+                    a significant moment in the subsequent development
+                    of the organization's economic structure.
+                </p>
+
+                <p>
+                    Petrovic's assistance with faction management helped
+                    establish the organizational foundations from which
+                    the People's Commercial Bank would operate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CLOSURE
+    ========================= -->
+
+    <section class="article">
+
+        <h1>
+            The Closure of the People's Commercial Bank
+        </h1>
+
+        <div class="article-text">
+
+            <p>
+                The People's Commercial Bank remained active from
+                approximately 2021 until late 2025.
+            </p>
+
+            <p>
+                In late 2025, however, the organization was forced
+                to shut down following another period of corrupt
+                moderation.
+            </p>
+
+            <p>
+                Following the shutdown, the organization never
+                returned to its previous level of activity.
+                Although its legacy remains part of the economic
+                history of the republic, the organization has not
+                been fully active since its closure.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TIMELINE
+    ========================= -->
+
+    <section class="timeline">
+
+        <h2>
+            Economic Timeline
+        </h2>
+
+        <p>
+            <strong>Early 2021</strong> — Comrade Željko Petrovic
+            encounters the people of the People's Oil Rig in Town Debug
+            and begins assisting with faction management.
+        </p>
+
+        <p>
+            <strong>2021</strong> — The People's Commercial Bank
+            becomes active and begins establishing itself as an
+            organizational and economic institution.
+        </p>
+
+        <p>
+            <strong>2021–2025</strong> — The organization remains
+            active and participates in the economic and factional
+            affairs of the community.
+        </p>
+
+        <p>
+            <strong>Late 2025</strong> — The People's Commercial Bank
+            is shut down following another episode of corrupt
+            moderation.
+        </p>
+
+        <p>
+            <strong>2026–Present</strong> — The organization has not
+            returned to full activity.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+</body>
+
+</html>
